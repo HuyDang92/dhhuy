@@ -1,0 +1,62 @@
+b {
+   background: -webkit-linear-gradient(#ad00ff, #00b2ff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.movePointer {
+   animation: mymove 2s infinite;
+}
+.cloud {
+   animation: cloud 2s infinite;
+}
+.computer {
+   animation: computer 2s infinite;
+}
+.as {
+   animation: as 2s infinite;
+}
+@keyframes mymove {
+   from {
+      bottom: -1rem;
+      left: 10rem;
+   }
+
+   to {
+      bottom: 1.25rem;
+      animation-delay: 1s;
+   }
+}
+
+@keyframes cloud {
+   0% {
+      transform: scale(0.8);
+   }
+   50% {
+      transform: scale(1);
+   }
+   100% {
+      transform: scale(0.8);
+   }
+}
+@keyframes computer {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(15deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+@keyframes as {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-0.5rem);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
