@@ -1,7 +1,6 @@
-import styles from './Button.scss';
+import './Button.scss';
 import classNames from 'classNames/bind';
 import { Link } from 'react-router-dom';
-
 
 export default function Button(props: any) {
    return (
