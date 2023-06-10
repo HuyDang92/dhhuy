@@ -13,7 +13,7 @@ export default function NavBar() {
                <img className="rounded-2xl object-cover" src="/thumb.jpg" alt="" />
             </div>
             <div className="">
-               <h1 className="text-3xl font-bold mb-2">GET IN TOUCH</h1>
+               <h1 className="text-3xl font-bold mb-2 dark:text-gray-50">GET IN TOUCH</h1>
 
                <form className="space-y-3">
                   <input
@@ -45,7 +45,7 @@ export default function NavBar() {
             <div className="h-fit">
                <img className="w-[190px] " src="/logo.svg" alt="" />
             </div>
-            <div className="social space-x-3 text-4xl">
+            <div className="social space-x-3 text-4xl dark:text-gray-50">
                <a href="#">
                   <FontAwesomeIcon icon={faFacebook} />
                </a>

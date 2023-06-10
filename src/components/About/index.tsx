@@ -5,10 +5,10 @@ import './About.scss';
 export default function NavBar() {
    return (
       <div className="relative h-[75vh] mt-40">
-         <h1 className="text-center text-4xl font-extrabold mb-14">About me</h1>
+         <h1 className="dark:text-gray-50 text-center text-4xl font-extrabold mb-14">About me</h1>
 
          <div className=" grid grid-cols-3">
-            <div className="col-span-1">
+            <div className="col-span-1 ">
                {/* <div className="relative avt overflow-hidden">
                   <img className="top-0" src="avt.svg" alt="" />
                </div> */}
@@ -61,7 +61,7 @@ export default function NavBar() {
                   </div>
                </div>
             </div>
-            <div className="col-span-2 mt-5">
+            <div className="col-span-2 mt-5 dark:text-gray-50">
                <h1 className="text-2xl font-bold mb-1">Hello, I'm Dang Huynh Huy</h1>
                <p className="font-medium text-lg text-gray-400">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem

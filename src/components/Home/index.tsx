@@ -6,9 +6,9 @@ import Button from '../Button';
 import './Home.scss';
 export default function NavBar() {
    return (
-      <div className="mt-24 grid grid-cols-2">
+      <div className="pt-24 grid grid-cols-2">
          <div className="homeLeft">
-            <h1 className="text-5xl font-extrabold leading-[80px]">
+            <h1 className="text-5xl dark:dark:text-gray-50 font-extrabold leading-[80px]">
                Hi There! <br /> I’m <b>Huynh Huy</b> Frontend Developer
             </h1>
             <p className="text-lg font-medium text-gray-400 my-5">
@@ -18,12 +18,12 @@ export default function NavBar() {
                <Button title="Contact me" primary>
                   Contact me
                </Button>
-               <span className="movePointer relative left-32 bottom-5 text-2xl">
+               <span className="movePointer relative dark:text-gray-50 left-32 bottom-5 text-2xl">
                   <FontAwesomeIcon icon={faArrowPointer} />
                </span>
             </div>
             <div className="flex align-center mt-10">
-               <div className="social space-x-3 border-r-2 text-3xl pe-5">
+               <div className="dark:text-gray-50 social space-x-3 border-r-2 text-3xl pe-5">
                   <a href="#">
                      <FontAwesomeIcon icon={faFacebook} />
                   </a>
@@ -34,7 +34,7 @@ export default function NavBar() {
                      <FontAwesomeIcon icon={faGithub} />
                   </a>
                </div>
-               <span className="text-lg ps-5">
+               <span className="text-lg ps-5 dark:text-gray-50">
                   Scroll down{' '}
                   <i className="scroll">
                      <FontAwesomeIcon icon={faCircleArrowDown} />

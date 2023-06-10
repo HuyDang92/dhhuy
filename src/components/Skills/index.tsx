@@ -4,7 +4,7 @@ import './Skills.scss';
 export default function NavBar() {
    return (
       <div className="relative h-[75vh] mt-20">
-         <h1 className="text-center text-4xl font-extrabold ">Skills</h1>
+         <h1 className="text-center text-4xl font-extrabold dark:text-gray-50">Skills</h1>
          <p className="text-center text-gray-400 text-lg font-medium mb-16">Frontend</p>
          <ul className="skills flex justify-center space-x-4">
             <li>
