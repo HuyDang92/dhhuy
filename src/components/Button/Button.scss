@@ -20,8 +20,13 @@
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.primary {
+   background-color: #ad00ff;
+   color: #fff;
+}
+.border {
    background-color: #fff;
+   color: #ad00ff;
 }
 
 .btn::after {
@@ -37,7 +42,8 @@
    transition: all 0.4s;
 }
 
-.btn-white::after {
+.primary::after,
+.border::after {
    background-color: #f4f4f4;
 }
 

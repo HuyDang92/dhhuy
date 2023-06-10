@@ -15,6 +15,18 @@ b {
 .as {
    animation: as 2s infinite;
 }
+.social{
+   svg{
+      transition: all 0.3s;
+      &:hover{
+         transform: scale(120%)
+      }
+   }
+}
+i.scroll svg{
+   animation: as 2s infinite;
+}
+
 @keyframes mymove {
    from {
       bottom: -1rem;
@@ -60,3 +72,4 @@ b {
       transform: translateY(0);
    }
 }
+// =========================================================================

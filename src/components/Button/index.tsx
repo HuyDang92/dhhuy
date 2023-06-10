@@ -1,10 +1,19 @@
 import './Button.scss';
-import { Link } from 'react-router-dom';
+import clsx from 'clsx';
 
 export default function Button(props: any) {
+   console.log(props);
+   const classes = [
+      'border-[1px]',
+      'shadow-sm',
+      'btn',
+      'btn-animate',
+      props.primary && 'primary',
+      props.border && 'border',
+   ];
    return (
       <div>
-         <a href="#" className="border-[1px] shadow-sm text-purple btn btn-white btn-animate">
+         <a href="#" className={clsx(...classes)}>
             {props.children}
          </a>
       </div>
