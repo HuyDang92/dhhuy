@@ -1,14 +1,24 @@
-// import { useState, useEffect } from 'react';
-
+import { useEffect } from 'react';
+import { Link } from 'react-scroll';
 import Button from '../Button';
 import './About.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function NavBar() {
+   useEffect(() => {
+      AOS.init();
+   }, []);
    return (
-      <div className="relative h-[75vh] mt-40">
-         <h1 className="dark:text-gray-50 text-center text-4xl font-extrabold mb-14">About me</h1>
+      <div className="relative h-[75vh] mt-40" id="about">
+         <h1
+            data-aos="fade-up"
+            className="dark:text-gray-50 text-center text-4xl font-extrabold mb-14"
+         >
+            About me
+         </h1>
 
          <div className=" grid grid-cols-3">
-            <div className="col-span-1 ">
+            <div data-aos="zoom-in" className="col-span-1 ">
                {/* <div className="relative avt overflow-hidden">
                   <img className="top-0" src="avt.svg" alt="" />
                </div> */}
@@ -61,7 +71,7 @@ export default function NavBar() {
                   </div>
                </div>
             </div>
-            <div className="col-span-2 mt-5 dark:text-gray-50">
+            <div data-aos="fade-left" className="col-span-2 mt-5 dark:text-gray-50">
                <h1 className="text-2xl font-bold mb-1">Hello, I'm Dang Huynh Huy</h1>
                <p className="font-medium text-lg text-gray-400">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -71,7 +81,16 @@ export default function NavBar() {
                </p>
                <div className="flex mt-5 space-x-3">
                   <Button title="Contact me" primary>
-                     Contact me
+                     <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                     >
+                        Contact me
+                     </Link>
                   </Button>
                   <Button title="Contact me" border>
                      Download my CV

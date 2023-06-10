@@ -1,18 +1,22 @@
-// import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Button from '../Button';
 import './Contact.scss';
 export default function NavBar() {
+   useEffect(() => {
+      AOS.init();
+   }, []);
    return (
-      <div className="relative min-h-[75vh] mt-28">
+      <div className="relative min-h-[75vh] mt-28" id="contact">
          <div className="grid grid-cols-2">
-            <div className="px-16">
+            <div data-aos="fade-right" className="px-16">
                <img className="rounded-2xl object-cover" src="/thumb.jpg" alt="" />
             </div>
-            <div className="">
+            <div data-aos="fade-left" className="">
                <h1 className="text-3xl font-bold mb-2 dark:text-gray-50">GET IN TOUCH</h1>
 
                <form className="space-y-3">
@@ -43,7 +47,9 @@ export default function NavBar() {
          </div>
          <div className="flex justify-between py-20">
             <div className="h-fit">
-               <img className="w-[190px] " src="/logo.svg" alt="" />
+               <h2 className="dark:text-white transition-all relative before:absolute before:w-2 before:h-2 before:bg-red-600 before:rounded-full before:bottom-1 before:left-[60px] w-36 font-extrabold text-3xl">
+                  DH HUY
+               </h2>{' '}
             </div>
             <div className="social space-x-3 text-4xl dark:text-gray-50">
                <a href="#">

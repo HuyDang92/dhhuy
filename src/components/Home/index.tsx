@@ -1,22 +1,40 @@
-// import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowPointer, faCircleArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll';
 import Button from '../Button';
 import './Home.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function NavBar() {
+   useEffect(() => {
+      AOS.init();
+   }, []);
    return (
-      <div className="pt-24 grid grid-cols-2">
+      <div className="pt-24 grid grid-cols-2" id="home">
          <div className="homeLeft">
-            <h1 className="text-5xl dark:dark:text-gray-50 font-extrabold leading-[80px]">
+            <h1
+               data-aos="fade-right"
+               className="text-5xl dark:dark:text-gray-50 font-extrabold leading-[80px]"
+            >
                Hi There! <br /> I’m <b>Huynh Huy</b> Frontend Developer
             </h1>
-            <p className="text-lg font-medium text-gray-400 my-5">
+            <p data-aos="fade-right" className="text-lg font-medium text-gray-400 my-5">
                I like creating beautiful and extensible UI products with great user experiences
             </p>
-            <div className="relative z-0">
+            <div data-aos="fade-up" className="relative z-0">
                <Button title="Contact me" primary>
-                  Contact me
+                  <Link
+                     activeClass="active"
+                     to="contact"
+                     spy={true}
+                     smooth={true}
+                     offset={-100}
+                     duration={500}
+                  >
+                     Contact me
+                  </Link>
                </Button>
                <span className="movePointer relative dark:text-gray-50 left-32 bottom-5 text-2xl">
                   <FontAwesomeIcon icon={faArrowPointer} />
@@ -34,15 +52,24 @@ export default function NavBar() {
                      <FontAwesomeIcon icon={faGithub} />
                   </a>
                </div>
-               <span className="text-lg ps-5 dark:text-gray-50">
-                  Scroll down{' '}
-                  <i className="scroll">
+               <span className="text-lg ps-5 dark:text-gray-50 cursor-pointer">
+                  <Link
+                     activeClass="active"
+                     to="about"
+                     spy={true}
+                     smooth={true}
+                     offset={-100}
+                     duration={500}
+                  >
+                     Scroll down
+                  </Link>
+                  <i className="scroll ps-2">
                      <FontAwesomeIcon icon={faCircleArrowDown} />
                   </i>
                </span>
             </div>
          </div>
-         <div className="homeRight me-14">
+         <div data-aos="fade-left" className="homeRight me-14">
             <div className="relative z-0">
                <img className="w-full" src="/banner.svg" alt="" />
                <img className="as absolute top-10 left-8 w-48" src="/as.svg" alt="" />

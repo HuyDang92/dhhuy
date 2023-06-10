@@ -1,19 +1,28 @@
-// import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Button from '../Button';
 import './Projects.scss';
 export default function NavBar() {
+   useEffect(() => {
+      AOS.init();
+   }, []);
    return (
-      <div className="relative min-h-[80vh] mt-20">
-         <h1 className="text-center text-4xl font-extrabold mb-14 dark:text-gray-50">Projects</h1>
+      <div className="relative min-h-[80vh] mt-20" id="projects">
+         <h1
+            data-aos="fade-up"
+            className="text-center text-4xl font-extrabold mb-14 dark:text-gray-50"
+         >
+            Projects
+         </h1>
          <div className="grid grid-cols-2 mb-10">
-            <div className="thumb">
+            <div data-aos="fade-right" className="thumb">
                <img className="p-5" src="/project/project1.png" alt="" />
             </div>
-            <div className="info w-[80%] ps-10">
+            <div data-aos="fade-left" className="info w-[80%] ps-10">
                <h2 className="text-center text-2xl font-bold my-2 dark:text-gray-50">CineVerse</h2>
                <p className="text-lg font-medium text-gray-400">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -50,7 +59,7 @@ export default function NavBar() {
             </div>
          </div>
          <div className="grid grid-cols-2 mb-10">
-            <div className="info w-[80%] ps-10">
+            <div data-aos="fade-right" className="info w-[80%] ps-10">
                <h2 className="text-center text-2xl font-bold my-2 dark:text-gray-50">TaskHub</h2>
                <p className="text-lg font-medium text-gray-400">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -82,7 +91,7 @@ export default function NavBar() {
                   </Button>
                </div>
             </div>
-            <div className="thumb">
+            <div data-aos="fade-left" className="thumb">
                <img className="p-5 rounded-[50px]" src="/project/project2.png" alt="" />
             </div>
          </div>

@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 // import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
+import { Link } from 'react-scroll';
 
 import './NavBar.scss';
 import Button from '../Button';
 import ToggleDarkMode from '../Toggle';
 export default function NavBar() {
    const [scrolled, setScrolled] = useState(false);
-   const moon = 'https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg';
 
    useEffect(() => {
       const handleScroll = () => {
@@ -27,35 +27,70 @@ export default function NavBar() {
    }, []);
    return (
       <div
-         className={`w-full py-2 px-24 grid grid-cols-2 items-cente items-center fixed top-0 dark:bg-dark  bg-white z-20 ${
+         className={`dark:bg-dark w-full xl:px-[8%] 1xl:px-[10%] flex justify-center bg-white fixed top-0 z-20 py-2 grid grid-cols-2 items-cente items-center  ${
             scrolled ? 'scrolled' : ''
          }`}
       >
-         <div className="flex">
+         <div className="flex col-span-1">
             <div className="pe-5 r h-fit">
-               <img className="w-[190px] " src="/logo.svg" alt="" />
-               {/* <img className="w-[190px] " src="/logoLight.svg" alt="" /> */}
+               <h2 className="dark:text-white transition-all relative before:absolute before:w-2 before:h-2 before:bg-red-600 before:rounded-full before:bottom-1 before:left-[49px] w-28 font-extrabold text-2xl">
+                  DH HUY
+               </h2>
             </div>
             <ul className="ps-5 border-l-[1px] flex justify-between r w-full">
-               <li className="navBar">
-                  <a href="#home" className="text-purple">
+               <li className="navBar dark:text-gray-200">
+                  <Link
+                     activeClass="active"
+                     to="home"
+                     spy={true}
+                     smooth={true}
+                     offset={-70}
+                     duration={500}
+                  >
                      Home
-                  </a>
+                  </Link>
                </li>
                <li className="navBar">
-                  <a href="#about" className="dark:text-gray-200">
-                     About
-                  </a>
+                  <span className="dark:text-gray-200">
+                     <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-120}
+                        duration={500}
+                     >
+                        About
+                     </Link>
+                  </span>
                </li>
                <li className="navBar">
-                  <a href="#skills" className="dark:text-gray-200">
-                     Skills
-                  </a>
+                  <span className="dark:text-gray-200">
+                     <Link
+                        activeClass="active"
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        offset={-140}
+                        duration={500}
+                     >
+                        Skills
+                     </Link>
+                  </span>
                </li>
                <li className="navBar">
-                  <a href="#project" className="dark:text-gray-200">
-                     Projects
-                  </a>
+                  <span className="dark:text-gray-200">
+                     <Link
+                        activeClass="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                     >
+                        Projects
+                     </Link>
+                  </span>
                </li>
             </ul>
          </div>
@@ -66,7 +101,16 @@ export default function NavBar() {
                <FontAwesomeIcon icon={faMoon} />
             </div>
             <Button title="Contact me" border>
-               Contact
+               <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+               >
+                  Contact
+               </Link>
             </Button>
          </div>
       </div>

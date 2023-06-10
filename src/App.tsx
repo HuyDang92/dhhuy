@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 function App() {
    return (
       <div>
-         <header>
+         <header className="">
             <NavBar />
          </header>
          <main className="w-full max-w-5xl mx-auto">

@@ -2,7 +2,6 @@ import './Button.scss';
 import clsx from 'clsx';
 
 export default function Button(props: any) {
-   console.log(props);
    const classes = [
       'border-[1px]',
       'shadow-sm',
