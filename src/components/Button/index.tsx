@@ -9,6 +9,8 @@ export default function Button(props: any) {
       'shadow-sm',
       'btn',
       'btn-animate',
+      'text-[10px]',
+      'lg:text-lg',
       props.primary && 'primary',
       props.border && 'border',
    ];

@@ -57,7 +57,7 @@ const MyForm: React.FC = () => {
          >
             <Form className="space-y-2">
                <Field
-                  className="py-2 px-5 w-[65%] rounded-[15px] border-2 border-gray-400 outline-none"
+                  className="py-2 px-5 w-full lg:w-[65%] rounded-[15px] border-2 border-gray-400 outline-none"
                   type="text"
                   name="name"
                   placeholder="Name"
@@ -66,7 +66,7 @@ const MyForm: React.FC = () => {
                   <ErrorMessage name="name" component="div" className="text-red-500" />
                </p>
                <Field
-                  className="py-2 px-5 w-[65%] rounded-[15px] border-2 border-gray-400 outline-none"
+                  className="py-2 px-5 w-full lg:w-[65%] rounded-[15px] border-2 border-gray-400 outline-none"
                   type="email"
                   name="email"
                   placeholder="Email"
@@ -75,7 +75,7 @@ const MyForm: React.FC = () => {
                   <ErrorMessage name="email" component="div" className="text-red-500" />
                </p>
                <Field
-                  className="py-2 px-5 w-[65%] h-40 rounded-[15px] border-2 border-gray-400 outline-none"
+                  className="py-2 px-5 w-full lg:w-[65%] h-40 rounded-[15px] border-2 border-gray-400 outline-none"
                   as="textarea"
                   name="message"
                   placeholder="Message"

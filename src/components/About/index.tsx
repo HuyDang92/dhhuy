@@ -10,15 +10,14 @@ export default function NavBar() {
       AOS.init();
    }, []);
    return (
-      <div className="relative h-[75vh] mt-40" id="about">
+      <div className="px-5 lg:px-0 relative h-[75vh] mt-20 lg:mt-40" id="about">
          <h1
             data-aos="fade-up"
-            className="dark:text-gray-50 text-center text-4xl font-extrabold mb-14"
+            className="dark:text-gray-50 text-center lg:text-4xl font-extrabold mb-14"
          >
             About me
          </h1>
-
-         <div className=" grid grid-cols-3">
+         <div className=" grid lg:grid-cols-3">
             <div data-aos="zoom-in" className="col-span-1 ">
                {/* <div className="relative avt overflow-hidden">
                   <img className="top-0" src="avt.svg" alt="" />
@@ -73,8 +72,8 @@ export default function NavBar() {
                </div>
             </div>
             <div data-aos="fade-left" className="col-span-2 mt-5 dark:text-gray-50">
-               <h1 className="text-2xl font-bold mb-1">Hello, I'm Dang Huynh Huy</h1>
-               <p className="font-medium text-lg text-gray-400">
+               <h1 className="lg:text-2xl font-bold mb-1">Hello, I'm Dang Huynh Huy</h1>
+               <p className="text-sm font-medium lg:text-lg text-gray-400">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                   Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                   unknown printer took a galley of type and scrambled it to make a type specimen

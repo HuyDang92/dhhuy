@@ -50,9 +50,9 @@ $color: #ad00ff;
 
 .animation-example {
    position: relative;
-//    top: 50%;
-//    left: 50%;
-//    transform: translateX(-50%) translateY(-50%);
+   //    top: 50%;
+   //    left: 50%;
+   //    transform: translateX(-50%) translateY(-50%);
    height: 20rem;
    width: 20rem;
 
@@ -231,3 +231,9 @@ $color: #ad00ff;
 }
 // ==========================================================================
 
+@media (max-width: 500px) {
+   .animation-example {
+      width: 17rem;
+      height: 17rem;
+   }
+}

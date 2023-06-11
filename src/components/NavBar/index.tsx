@@ -31,13 +31,13 @@ export default function NavBar() {
             scrolled ? 'scrolled' : ''
          }`}
       >
-         <div className="flex col-span-1">
-            <div className="pe-5 r h-fit">
-               <h2 className="dark:text-white transition-all relative before:absolute before:w-2 before:h-2 before:bg-red-600 before:rounded-full before:bottom-1 before:left-[49px] w-28 font-extrabold text-2xl">
+         <div className="px-5 lg:px-0 flex col-span-1">
+            <div className="lg:pe-5 r h-fit">
+               <h2 className="dark:text-white text-sm transition-all relative before:absolute before:w-2 before:h-2 before:bg-red-600 before:rounded-full before:bottom-1 before:left-[25px] lg:before:left-[49px] w-28 font-extrabold lg:text-2xl">
                   DH HUY
                </h2>
             </div>
-            <ul className="ps-5 border-l-[1px] flex justify-between r w-full cursor-pointer">
+            <ul className="hidden ps-5 border-l-[1px] lg:flex justify-between r w-full cursor-pointer">
                <li className="navBar dark:text-gray-200">
                   <Link
                      activeClass="active"
@@ -94,24 +94,26 @@ export default function NavBar() {
                </li>
             </ul>
          </div>
-         <div className="col-end-7 btn-contact flex items-center">
+         <div className="pe-5 lg:pe-0 lg:col-end-4 btn-contact flex items-center">
             <div className="text-gray-500 pe-5 flex items-center">
                <FontAwesomeIcon icon={faSun} />
                <ToggleDarkMode />
                <FontAwesomeIcon icon={faMoon} />
             </div>
-            <Button title="Contact me" border>
-               <Link
-                  activeClass="active"
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
-               >
-                  Contact
-               </Link>
-            </Button>
+            <span className="hidden lg:block">
+               <Button title="Contact me" border>
+                  <Link
+                     activeClass="active"
+                     to="contact"
+                     spy={true}
+                     smooth={true}
+                     offset={-100}
+                     duration={500}
+                  >
+                     Contact
+                  </Link>
+               </Button>
+            </span>
          </div>
       </div>
    );
