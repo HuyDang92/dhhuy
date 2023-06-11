@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Button from '../Button';
 import './Contact.scss';
 import MyForm from '../Form';
 export default function NavBar() {
