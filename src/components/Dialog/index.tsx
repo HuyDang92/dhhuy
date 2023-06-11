@@ -6,11 +6,11 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 export default function DialogComponent(props: any) {
    console.log(props);
 
-   const [isOpen, setIsOpen] = useState(true);
+   const [isOpen, setIsOpen] = useState(false);
 
    useEffect(() => {
       if (props.check) {
-         setIsOpen(true);
+         setIsOpen(false);
       }
    }, [props.check]);
 
