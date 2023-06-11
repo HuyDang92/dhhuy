@@ -2,6 +2,8 @@ import './Button.scss';
 import clsx from 'clsx';
 
 export default function Button(props: any) {
+   const Comp = 'a';
+
    const classes = [
       'border-[1px]',
       'shadow-sm',
@@ -12,9 +14,9 @@ export default function Button(props: any) {
    ];
    return (
       <div>
-         <a href="#" className={clsx(...classes)}>
+         <Comp href="#" className={clsx(...classes)}>
             {props.children}
-         </a>
+         </Comp>
       </div>
    );
 }

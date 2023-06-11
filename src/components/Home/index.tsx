@@ -42,13 +42,13 @@ export default function NavBar() {
             </div>
             <div className="flex align-center mt-10">
                <div className="dark:text-gray-50 social space-x-3 border-r-2 text-3xl pe-5">
-                  <a href="#">
+                  <a href="https://www.facebook.com/dang.huy.7374" target="_blank">
                      <FontAwesomeIcon icon={faFacebook} />
                   </a>
-                  <a href="#">
+                  <a href="https://github.com/HuyDang92" target="_blank">
                      <FontAwesomeIcon icon={faInstagram} />
                   </a>
-                  <a href="#">
+                  <a href="https://github.com/HuyDang92" target="_blank">
                      <FontAwesomeIcon icon={faGithub} />
                   </a>
                </div>

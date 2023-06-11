@@ -4,6 +4,7 @@ import Button from '../Button';
 import './About.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import CV from '../../assets/CV_Đặng-Huỳnh-Huy.pdf';
 export default function NavBar() {
    useEffect(() => {
       AOS.init();
@@ -93,7 +94,9 @@ export default function NavBar() {
                      </Link>
                   </Button>
                   <Button title="Contact me" border>
-                     Download my CV
+                     <a href={CV} download="CV_DangHuynhHuy" target="_blank" rel="noreferrer">
+                        Download my CV
+                     </a>
                   </Button>
                </div>
             </div>

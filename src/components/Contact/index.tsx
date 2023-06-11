@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Button from '../Button';
 import './Contact.scss';
+import MyForm from '../Form';
 export default function NavBar() {
    useEffect(() => {
       AOS.init();
@@ -18,31 +18,7 @@ export default function NavBar() {
             </div>
             <div data-aos="fade-left" className="">
                <h1 className="text-3xl font-bold mb-2 dark:text-gray-50">GET IN TOUCH</h1>
-
-               <form className="space-y-3">
-                  <input
-                     className="py-2 px-5 w-[65%] rounded-[15px] border-2 border-gray-400 outline-none"
-                     type="text"
-                     placeholder="Name"
-                  />
-                  <input
-                     className="py-2 px-5 w-[65%] rounded-[15px] border-2 border-gray-400 outline-none"
-                     type="email"
-                     placeholder="Email"
-                  />
-                  <textarea
-                     name=""
-                     id=""
-                     className="py-2 px-5 w-[65%] h-40 rounded-[15px] border-2 border-gray-400 outline-none"
-                     placeholder="Message"
-                  ></textarea>
-               </form>
-               <Button title="Contact me" primary>
-                  Send
-                  <i className="px-2">
-                     <FontAwesomeIcon icon={faPaperPlane} />
-                  </i>
-               </Button>
+               <MyForm />
             </div>
          </div>
          <div className="flex justify-between py-20">
@@ -52,13 +28,13 @@ export default function NavBar() {
                </h2>{' '}
             </div>
             <div className="social space-x-3 text-4xl dark:text-gray-50">
-               <a href="#">
+               <a href="https://www.facebook.com/dang.huy.7374" target="_blank">
                   <FontAwesomeIcon icon={faFacebook} />
                </a>
-               <a href="#">
+               <a href="https://github.com/HuyDang92" target="_blank">
                   <FontAwesomeIcon icon={faInstagram} />
                </a>
-               <a href="#">
+               <a href="https://github.com/HuyDang92" target="_blank">
                   <FontAwesomeIcon icon={faGithub} />
                </a>
             </div>

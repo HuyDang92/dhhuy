@@ -37,7 +37,7 @@ export default function NavBar() {
                   DH HUY
                </h2>
             </div>
-            <ul className="ps-5 border-l-[1px] flex justify-between r w-full">
+            <ul className="ps-5 border-l-[1px] flex justify-between r w-full cursor-pointer">
                <li className="navBar dark:text-gray-200">
                   <Link
                      activeClass="active"
