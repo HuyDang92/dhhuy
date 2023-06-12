@@ -13,7 +13,7 @@ export default function NavBar() {
       <div className="px-5 lg:px-0 relative h-[75vh] mt-20 lg:mt-40" id="about">
          <h1
             data-aos="fade-up"
-            className="dark:text-gray-50 text-center lg:text-4xl font-extrabold mb-14"
+            className="dark:text-gray-50 text-center text-xl lg:text-4xl font-extrabold mb-10 lg:mb-14"
          >
             About me
          </h1>
@@ -74,10 +74,9 @@ export default function NavBar() {
             <div data-aos="fade-left" className="col-span-2 mt-5 dark:text-gray-50">
                <h1 className="lg:text-2xl font-bold mb-1">Hello, I'm Dang Huynh Huy</h1>
                <p className="text-sm font-medium lg:text-lg text-gray-400">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen
-                  book. It has survived not only five.
+                  I am a frontend developer, I am a final year student of Fpt Folytechnic college
+                  majoring in web development. I love layout colors as well as images so I chose to
+                  specialize in frontend to make beautiful and useful interfaces.
                </p>
                <div className="flex mt-5 space-x-3">
                   <Button title="Contact me" primary>

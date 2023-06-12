@@ -12,17 +12,17 @@ export default function NavBar() {
       AOS.init();
    }, []);
    return (
-      <div className="px-5 lg:px-0 pt-24 grid grid-cols-2" id="home">
+      <div className="px-5 lg:px-0 pt-20 lg:pt-24 grid grid-cols-2" id="home">
          <div className="homeLeft">
             <h1
                data-aos="fade-right"
-               className="text-sm lg:text-5xl dark:dark:text-gray-50 font-extrabold lg:leading-[80px]"
+               className="text-[20px] lg:text-5xl dark:dark:text-gray-50 font-extrabold lg:leading-[80px]"
             >
                Hi There! <br /> I’m <b>Huynh Huy</b> Frontend Developer
             </h1>
             <p
                data-aos="fade-right"
-               className="text-[10px] lg:text-lg font-medium text-gray-400 my-5"
+               className="text-[10px] lg:text-lg font-medium text-gray-400 my-2 lg:my-5"
             >
                I like creating beautiful and extensible UI products with great user experiences
             </p>
@@ -44,7 +44,7 @@ export default function NavBar() {
                </span>
             </div>
             <div className="flex align-center lg:mt-10">
-               <div className="dark:text-gray-50 flex social space-x-3 border-r-2 lg:text-3xl pe-5">
+               <div className="dark:text-gray-50 flex social space-x-3 border-r-2 text-xl lg:text-3xl pe-5">
                   <a href="https://www.facebook.com/dang.huy.7374" target="_blank">
                      <FontAwesomeIcon icon={faFacebook} />
                   </a>
@@ -76,17 +76,17 @@ export default function NavBar() {
             <div className="relative z-0">
                <img className="w-full" src="/banner.svg" alt="" />
                <img
-                  className="as absolute top-0 lg:top-10 -left-2 w-16 lg:left-8 lg:w-48"
+                  className="as absolute top-0 lg:top-10 left-0 w-20 lg:left-8 lg:w-48"
                   src="/as.svg"
                   alt=""
                />
                <img
-                  className="cloud hidden lg:absolute top-0 right-5 w-36"
+                  className="cloud absolute -top-3 lg:top-0 right-0 lg:right-5 w-16 lg:w-36"
                   src="/cloud.svg"
                   alt=""
                />
                <img
-                  className="computer w-16 lg:absolute lg:top-20 lg:-right-16 lg:w-40"
+                  className="computer w-20 lg:absolute lg:top-20 lg:-right-16 lg:w-40"
                   src="/computer.svg"
                   alt=""
                />
