@@ -36,7 +36,7 @@ export default function NavBar() {
 
    return (
       <div
-         className={`dark:bg-dark lg:w-full xl:px-[8%] 1xl:px-[10%] flex justify-center bg-white fixed top-0 z-20 py-2 grid grid-cols-2 items-cente items-center  ${
+         className={`dark:bg-dark w-full xl:px-[8%] 1xl:px-[10%] flex justify-center bg-white fixed top-0 z-20 py-2 grid grid-cols-2 items-cente items-center  ${
             scrolled ? 'scrolled' : ''
          }`}
       >
@@ -103,7 +103,7 @@ export default function NavBar() {
                </li>
             </ul>
          </div>
-         <div className="ps-5 lg:ps-0 lg:col-end-4 btn-contact flex items-center">
+         <div className="px-5 lg:px-0 col-end-5 lg:col-end-4 btn-contact flex items-center">
             <div className="text-gray-500 lg:pe-5 flex items-center">
                <FontAwesomeIcon icon={faSun} />
                <ToggleDarkMode />
@@ -147,7 +147,7 @@ export default function NavBar() {
                   <FontAwesomeIcon icon={faXmark} />
                </span>
             </div>
-            <ul className="ps-10  pt-5 border-l-[1px] space-y-7 w-full cursor-pointer">
+            <ul className="ps-10 pt-5 border-l-[1px] space-y-7 w-full cursor-pointer">
                <li className="navBar dark:text-gray-200">
                   <Link
                      activeClass="active"
