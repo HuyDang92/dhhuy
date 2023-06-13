@@ -40,7 +40,7 @@ export default function NavBar() {
             scrolled ? 'scrolled' : ''
          }`}
       >
-         <div className="px-5 lg:px-0 flex lg:col-span-1">
+         <div className="px-5 lg:px-0 lg:flex lg:col-span-1">
             <div className="lg:pe-5 r h-fit">
                <h2 className="dark:text-white text-sm transition-all relative before:absolute before:w-2 before:h-2 before:bg-red-600 before:rounded-full before:bottom-0 lg:before:bottom-1 before:left-[25px] lg:before:left-[49px] w-28 font-extrabold lg:text-2xl">
                   DH HUY
