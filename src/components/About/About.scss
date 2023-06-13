@@ -53,8 +53,8 @@ $color: #ad00ff;
    //    top: 50%;
    //    left: 50%;
    //    transform: translateX(-50%) translateY(-50%);
-   height: 20rem;
-   width: 20rem;
+   height: 24rem;
+   width: 24rem;
 
    > .item {
       position: absolute;
@@ -231,15 +231,15 @@ $color: #ad00ff;
 }
 // ==========================================================================
 
-@media (max-width: 480px) {
-   .animation-example {
-      width: 17rem;
-      height: 17rem;
-   }
-}
-@media (max-width: 600px) {
-   .animation-example {
-      width: 20rem;
-      height: 20rem;
-   }
-}
+// @media (max-width: 480px) {
+//    .animation-example {
+//       width: 17rem;
+//       height: 17rem;
+//    }
+// }
+// @media (max-width: 600px) {
+//    .animation-example {
+//       width: 20rem;
+//       height: 20rem;
+//    }
+// }

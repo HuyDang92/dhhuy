@@ -12,7 +12,7 @@ function App() {
          <header className="">
             <NavBar />
          </header>
-         <main className="w-full max-w-5xl mx-auto">
+         <main className="w-full max-w-7xl mx-auto">
             <Home />
             <About />
             <Skills />

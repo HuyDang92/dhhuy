@@ -17,11 +17,8 @@ export default function NavBar() {
          >
             About me
          </h1>
-         <div className=" grid lg:grid-cols-3">
+         <div className="lg:grid lg:grid-cols-3">
             <div data-aos="zoom-in" className="col-span-1">
-               {/* <div className="relative avt overflow-hidden">
-                  <img className="top-0" src="avt.svg" alt="" />
-               </div> */}
                <div className="animation-example">
                   <div className="item">
                      <div className="line"></div>

@@ -36,7 +36,7 @@ export default function NavBar() {
 
    return (
       <div
-         className={`dark:bg-dark w-full xl:px-[8%] 1xl:px-[10%] flex justify-center bg-white fixed top-0 z-20 py-2 grid grid-cols-2 items-cente items-center  ${
+         className={`dark:bg-dark lg:w-full xl:px-[8%] 1xl:px-[10%] flex justify-center bg-white fixed top-0 z-20 py-2 grid grid-cols-2 items-cente items-center  ${
             scrolled ? 'scrolled' : ''
          }`}
       >
