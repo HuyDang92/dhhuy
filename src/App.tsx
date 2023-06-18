@@ -14,9 +14,9 @@ function App() {
          </header>
          <main className="w-full max-w-7xl mx-auto">
             <Home />
-            <About />
-            <Skills />
-            <Projects />
+            {/* <About /> */}
+            {/* <Skills /> */}
+            {/* <Projects /> */}
             <Contact />
          </main>
       </div>

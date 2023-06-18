@@ -231,12 +231,12 @@ $color: #ad00ff;
 }
 // ==========================================================================
 
-// @media (max-width: 480px) {
-//    .animation-example {
-//       width: 17rem;
-//       height: 17rem;
-//    }
-// }
+@media (max-width: 480px) {
+   .animation-example {
+      width: 17rem;
+      height: 17rem;
+   }
+}
 // @media (max-width: 600px) {
 //    .animation-example {
 //       width: 20rem;

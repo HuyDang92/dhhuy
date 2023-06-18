@@ -27,51 +27,51 @@ i.scroll svg{
    animation: as 2s infinite;
 }
 
-@keyframes mymove {
-   from {
-      bottom: -1rem;
-      left: 10rem;
-   }
+// @keyframes mymove {
+//    from {
+//       bottom: -1rem;
+//       left: 10rem;
+//    }
 
-   to {
-      bottom: 1.25rem;
-      animation-delay: 1s;
-   }
-}
+//    to {
+//       bottom: 1.25rem;
+//       animation-delay: 1s;
+//    }
+// }
 
-@keyframes cloud {
-   0% {
-      transform: scale(0.8);
-   }
-   50% {
-      transform: scale(1);
-   }
-   100% {
-      transform: scale(0.8);
-   }
-}
-@keyframes computer {
-   0% {
-      transform: rotate(0deg);
-   }
-   50% {
-      transform: rotate(15deg);
-   }
-   100% {
-      transform: rotate(0deg);
-   }
-}
-@keyframes as {
-   0% {
-      transform: translateY(0);
-   }
-   50% {
-      transform: translateY(-0.5rem);
-   }
-   100% {
-      transform: translateY(0);
-   }
-}
+// @keyframes cloud {
+//    0% {
+//       transform: scale(0.8);
+//    }
+//    50% {
+//       transform: scale(1);
+//    }
+//    100% {
+//       transform: scale(0.8);
+//    }
+// }
+// @keyframes computer {
+//    0% {
+//       transform: rotate(0deg);
+//    }
+//    50% {
+//       transform: rotate(15deg);
+//    }
+//    100% {
+//       transform: rotate(0deg);
+//    }
+// }
+// @keyframes as {
+//    0% {
+//       transform: translateY(0);
+//    }
+//    50% {
+//       transform: translateY(-0.5rem);
+//    }
+//    100% {
+//       transform: translateY(0);
+//    }
+// }
 // =========================================================================
 // @media (max-width: 500px) {
    
