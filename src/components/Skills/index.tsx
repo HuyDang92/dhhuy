@@ -7,7 +7,7 @@ export default function NavBar() {
       AOS.init();
    }, []);
    return (
-      <div className="px-5 lg:px-0 relative h-[40vh] lg:h-[75vh] mt-56 lg:mt-28" id="skills">
+      <div className="px-5 lg:px-0 relative h-[40vh] lg:h-[75vh] mt-32 lg:mt-28" id="skills">
          <h1
             data-aos="fade-up"
             className="text-center text-xl lg:text-4xl font-extrabold dark:text-gray-50"

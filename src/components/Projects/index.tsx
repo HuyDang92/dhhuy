@@ -11,7 +11,7 @@ export default function NavBar() {
       AOS.init();
    }, []);
    return (
-      <div className="px-5 lg:px-0 relative lg:min-h-[80vh] mt-20" id="projects">
+      <div className="px-5 lg:px-0 relative lg:min-h-[80vh] mt-32 lg:mt-20" id="projects">
          <h1
             data-aos="fade-up"
             className="text-center text-xl lg:text-4xl font-extrabold mb-8 lg:mb-14 dark:text-gray-50"
@@ -22,7 +22,7 @@ export default function NavBar() {
             <div data-aos="fade-right" className="thumb">
                <img className="lg:p-5" src="/project/project1.png" alt="" />
             </div>
-            <div data-aos="fade-left" className="info lg:w-[80%] lg:ps-10">
+            <div data-aos="zoom-in" className="info lg:w-[80%] lg:ps-10">
                <h2 className="text-center lg:text-2xl font-bold my-2 dark:text-gray-50">
                   CineVerse
                </h2>
@@ -93,7 +93,7 @@ export default function NavBar() {
                   </Button>
                </div>
             </div>
-            <div data-aos="fade-left" className="thumb">
+            <div data-aos="zoom-in" className="thumb">
                <img
                   className="lg:p-5 lg:mt-0 mt-5 rounded-2xl lg:rounded-[50px]"
                   src="/project/project2.png"

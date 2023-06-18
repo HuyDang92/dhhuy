@@ -10,16 +10,16 @@ export default function NavBar() {
       AOS.init();
    }, []);
    return (
-      <div className="px-5 lg:px-0 relative h-[75vh] mt-20 lg:mt-40" id="about">
+      <div className="px-5 lg:px-0 relative h-[75vh] mt-40" id="about">
          <h1
             data-aos="fade-up"
-            className="dark:text-gray-50 text-center text-xl lg:text-4xl font-extrabold mb-10 lg:mb-14"
+            className="dark:text-gray-50 text-center text-xl lg:text-4xl font-extrabold mb-10 lg:mb-28"
          >
             About me
          </h1>
-         <div className="lg:grid lg:grid-cols-3">
-            <div data-aos="zoom-in" className="col-span-1">
-               <div className="animation-example">
+         <div className="lg:grid relative lg:grid-cols-3">
+            <div data-aos="zoom-in" className="lg:col-span-1 relative flex justify-center">
+               {/* <div className="avt-effect">
                   <div className="item">
                      <div className="line"></div>
                      <div className="dot"></div>
@@ -61,14 +61,14 @@ export default function NavBar() {
                      <div className="circle"></div>
                   </div>
                   <div className="center">
-                     {/* <div className="circle"></div>
-                     <div className="circle"></div>
-                     <div className="circle"></div> */}
                      <img className="rounded-full w-full h-full" src="/avt.svg" alt="" />
                   </div>
+               </div> */}
+               <div className="avatar my-10 lg:my-0">
+                  <img className="rounded-full w-full h-full" src="/avt.svg" alt="" />
                </div>
             </div>
-            <div data-aos="fade-left" className="col-span-2 mt-5 dark:text-gray-50">
+            <div data-aos="zoom-in" className="col-span-2 mt-5 dark:text-gray-50">
                <h1 className="lg:text-2xl font-bold mb-1">Hello, I'm Dang Huynh Huy</h1>
                <p className="text-sm font-medium lg:text-lg text-gray-400">
                   I am a frontend developer, I am a final year student of Fpt Folytechnic college

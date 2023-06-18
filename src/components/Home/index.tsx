@@ -86,7 +86,7 @@ export default function NavBar() {
                   alt=""
                />
                <img
-                  className="computer w-20 lg:absolute lg:top-20 lg:-right-16 lg:w-40"
+                  className="computer w-20 lg:absolute lg:top-20 lg:-right-10 lg:w-40"
                   src="/computer.svg"
                   alt=""
                />

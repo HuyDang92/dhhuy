@@ -9,14 +9,14 @@ import Contact from './components/Contact';
 function App() {
    return (
       <div>
-         <header className="container">
+         <header className="">
             <NavBar />
          </header>
          <main className="w-full max-w-7xl mx-auto">
             <Home />
-            {/* <About /> */}
-            {/* <Skills /> */}
-            {/* <Projects /> */}
+            <About />
+            <Skills />
+            <Projects />
             <Contact />
          </main>
       </div>
