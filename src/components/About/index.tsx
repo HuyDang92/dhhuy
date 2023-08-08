@@ -4,7 +4,7 @@ import Button from '../Button';
 import './About.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import CV from '../../assets/CV_Đặng-Huỳnh-Huy.pdf';
+import CV from '../../assets/CV_ĐặngHuynhHuy.pdf';
 export default function NavBar() {
    useEffect(() => {
       AOS.init();
@@ -69,7 +69,7 @@ export default function NavBar() {
                </div>
             </div>
             <div data-aos="zoom-in" className="col-span-2 mt-5 dark:text-gray-50">
-               <h1 className="lg:text-2xl font-bold mb-1">Hello, I'm Dang Huynh Huy</h1>
+               <h1 className="lg:text-2xl font-bold mb-1">Hello, I am Dang Huynh Huy</h1>
                <p className="text-sm font-medium lg:text-lg text-gray-400">
                   I am a frontend developer, I am a final year student of Fpt Folytechnic college
                   majoring in web development. I love layout colors as well as images so I chose to

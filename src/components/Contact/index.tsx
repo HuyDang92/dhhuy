@@ -22,7 +22,7 @@ export default function NavBar() {
          </div>
          <div className="flex justify-between px-5 lg:px-0 py-14 lg:py-10">
             <div className="h-fit">
-               <h2 className="dark:text-white transition-all relative before:absolute before:w-2 before:h-2 before:bg-red-600 before:rounded-full before:bottom-1 before:left-[60px] w-36 font-extrabold text-3xl">
+               <h2 className="dark:text-white transition-all relative before:absolute before:w-2 before:h-2 before:bg-red-600 before:rounded-full before:bottom-1 before:left-[50px] w-36 font-extrabold text-3xl">
                   DH HUY
                </h2>{' '}
             </div>

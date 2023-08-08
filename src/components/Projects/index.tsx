@@ -19,18 +19,23 @@ export default function NavBar() {
             Projects
          </h1>
          <div className="grid lg:grid-cols-2 mb-20 lg:mb-10">
-            <div data-aos="fade-right" className="thumb">
-               <img className="lg:p-5" src="/project/project1.png" alt="" />
+            <div data-aos="fade-right" className="thumb rounded-2xl">
+               <img
+                  className="w-full"
+                  style={{ borderRadius: '30px' }}
+                  src="/project/Project3.png"
+                  alt=""
+               />
             </div>
             <div data-aos="zoom-in" className="info lg:w-[80%] lg:ps-10">
                <h2 className="text-center lg:text-2xl font-bold my-2 dark:text-gray-50">
-                  CineVerse
+                  HDCourse
                </h2>
                <p className="text-sm lg:text-lg font-medium text-gray-400">
                   Website to watch movies online with functions such as category, filter movies by
                   name, dark mode, authen, comment by movie, history... and admin page(CRUD)
                </p>
-               <ul className="tech flex lg:w-40 justify-center space-x-2 py-5">
+               <ul className="tech flex justify-center space-x-2 py-5">
                   <li>
                      <img src="/tech/tech-4.svg" alt="" />
                   </li>
@@ -46,16 +51,20 @@ export default function NavBar() {
                </ul>
                <div className="flex justify-center space-x-3">
                   <Button title="Contact me" primary>
-                     Source
-                     <i className="px-1">
-                        <FontAwesomeIcon icon={faGithub} />
-                     </i>
+                     <a target="_blank" href="https://github.com/HuyDang92/hdcourse-react">
+                        Source
+                        <i className="px-1">
+                           <FontAwesomeIcon icon={faGithub} />
+                        </i>
+                     </a>
                   </Button>
                   <Button title="Contact me" border>
-                     Live demo
-                     <i className="px-1">
-                        <FontAwesomeIcon icon={faGlobe} />
-                     </i>
+                     <a href="https://hdcourse.vercel.app/" target="_blank">
+                        Live demo
+                        <i className="px-1">
+                           <FontAwesomeIcon icon={faGlobe} />
+                        </i>
+                     </a>
                   </Button>
                </div>
             </div>
@@ -67,7 +76,7 @@ export default function NavBar() {
                   Trello clone with authen, create boards, add lists, add cards, move cards, add
                   members...
                </p>
-               <ul className="tech lg:w-32 flex justify-center space-x-2 py-5">
+               <ul className="tech flex justify-center space-x-2 py-5">
                   <li>
                      <img src="/tech/tech-4.svg" alt="" />
                   </li>
@@ -80,17 +89,19 @@ export default function NavBar() {
                </ul>
                <div className="flex justify-center space-x-3">
                   <Button title="Contact me" primary>
-                     Source
-                     <i className="px-1">
-                        <FontAwesomeIcon icon={faGithub} />
-                     </i>
+                     <a href="https://github.com/HuyDang92/taskhub" target="_blank">
+                        Source
+                        <i className="px-1">
+                           <FontAwesomeIcon icon={faGithub} />
+                        </i>
+                     </a>
                   </Button>
-                  <Button title="Contact me" border>
+                  {/* <Button title="Contact me" border>
                      Live demo
                      <i className="px-1">
                         <FontAwesomeIcon icon={faGlobe} />
                      </i>
-                  </Button>
+                  </Button> */}
                </div>
             </div>
             <div data-aos="zoom-in" className="thumb">
