@@ -4,7 +4,7 @@ import Button from '../Button';
 import './About.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import CV from '../../assets/CV_ĐặngHuynhHuy.pdf';
+import CV from '../../assets/CV_ĐặngHuynhHuy_FrontEnd_Developer.pdf';
 export default function NavBar() {
    useEffect(() => {
       AOS.init();
