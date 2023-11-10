@@ -23,11 +23,101 @@ export default function NavBar() {
                <img
                   className="w-full"
                   style={{ borderRadius: '30px' }}
+                  src="/project/project5.png"
+                  alt=""
+               />
+            </div>
+            <div data-aos="zoom-in" className="info lg:w-[100%] lg:ps-40">
+               <h2 className="text-center lg:text-2xl font-bold my-2 dark:text-gray-50">
+                  Xuongthuchanh FPOLY
+               </h2>
+               <p className="text-sm lg:text-lg font-medium text-gray-400">
+                  Project management website for all teachers and students of FPT Polytechnic
+                  College (more than 10,000 users are using it)
+               </p>
+               <ul className="tech flex justify-center space-x-2 py-5">
+                  <li>
+                     <img src="/tech/tech-4.svg" alt="" />
+                  </li>
+                  <li>
+                     <img src="/tech/tech-2.svg" alt="" />
+                  </li>
+                  <li>
+                     <img src="/tech/tech-6.svg" alt="" />
+                  </li>
+                  <li>
+                     <img src="/tech/tech-10.svg" alt="" />
+                  </li>
+               </ul>
+               <div className="flex justify-center space-x-3">
+                  <Button title="Contact me" border>
+                     <a href="https://xuongthuchanh.poly.edu.vn/" target="_blank">
+                        Live
+                        <i className="px-1">
+                           <FontAwesomeIcon icon={faGlobe} />
+                        </i>
+                     </a>
+                  </Button>
+               </div>
+            </div>
+         </div>
+         <div className="grid lg:grid-cols-2 mb-10">
+            <div data-aos="fade-right" className="info lg:w-[80%] lg:ps-10">
+               <h2 className="text-center lg:text-2xl font-bold my-2 dark:text-gray-50">Nevent</h2>
+               <p className="text-sm lg:text-lg font-medium text-gray-400 text-center">
+                  Online electronic ticket selling website for events (QR Code tickets).
+               </p>
+               <ul className="tech flex justify-center space-x-2 py-5">
+                  <li>
+                     <img src="/tech/tech-4.svg" alt="" />
+                  </li>
+                  {/* <li>
+                     <img src="/tech/tech-2.svg" alt="" />
+                  </li> */}
+                  <li>
+                     <img src="/tech/tech-6.svg" alt="" />
+                  </li>
+                  <li>
+                     <img src="/tech/tech-10.svg" alt="" />
+                  </li>
+               </ul>
+               <div className="flex justify-center space-x-3">
+                  <Button title="Contact me" primary>
+                     <a href="https://github.com/HuyDang92/nevent" target="_blank">
+                        Source
+                        <i className="px-1">
+                           <FontAwesomeIcon icon={faGithub} />
+                        </i>
+                     </a>
+                  </Button>
+                  <Button title="Contact me" border>
+                     <a href="https://www.nevent.io.vn/" target="_blank">
+                        Live demo
+                        <i className="px-1">
+                           <FontAwesomeIcon icon={faGlobe} />
+                        </i>
+                     </a>
+                  </Button>
+               </div>
+            </div>
+            <div data-aos="zoom-in" className="thumb">
+               <img
+                  className="lg:p-5 lg:mt-0 mt-5 rounded-2xl lg:rounded-[50px]"
+                  src="/project/project4.png"
+                  alt=""
+               />
+            </div>
+         </div>
+         <div className="grid lg:grid-cols-2 mb-20 lg:mb-10">
+            <div data-aos="fade-right" className="thumb rounded-2xl">
+               <img
+                  className="w-full"
+                  style={{ borderRadius: '30px' }}
                   src="/project/Project3.png"
                   alt=""
                />
             </div>
-            <div data-aos="zoom-in" className="info lg:w-[80%] lg:ps-10">
+            <div data-aos="zoom-in" className="info lg:w-[100%] lg:ps-40">
                <h2 className="text-center lg:text-2xl font-bold my-2 dark:text-gray-50">
                   HDCourse
                </h2>
