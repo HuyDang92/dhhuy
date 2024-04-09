@@ -33,7 +33,7 @@ export default function NavBar() {
                </h2>
                <p className="text-sm lg:text-lg font-medium text-gray-400">
                   Project management website for all teachers and students of FPT Polytechnic
-                  College (more than 10,000 users are using it)
+                  College (more than 20,000 users are using it)
                </p>
                <ul className="tech flex justify-center space-x-2 py-5">
                   <li>
